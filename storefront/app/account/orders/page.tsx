@@ -52,7 +52,11 @@ export default function OrdersPage() {
                 : '—'
 
               return (
-                <div key={order.id} className="border rounded-sm p-5">
+                <Link
+                  key={order.id}
+                  href={`/account/orders/${order.id}`}
+                  className="block border rounded-sm p-5 hover:border-accent transition-colors"
+                >
                   <div className="flex flex-wrap items-start justify-between gap-4">
                     <div>
                       <p className="text-sm font-medium">
@@ -75,7 +79,7 @@ export default function OrdersPage() {
                       </p>
                     </div>
                   )}
-                </div>
+                </Link>
               )
             })}
           </div>
