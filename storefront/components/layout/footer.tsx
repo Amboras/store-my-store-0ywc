@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Zap, Twitter, Instagram, Youtube } from 'lucide-react'
+import { Zap, X, Camera, PlayCircle } from 'lucide-react'
 import { clearConsent } from '@/lib/cookie-consent'
 import { usePolicies } from '@/hooks/use-policies'
 
@@ -54,14 +54,14 @@ export default function Footer() {
               Premium electronics engineered for performance. Trusted by tech enthusiasts across India.
             </p>
             <div className="flex items-center gap-4 mt-5">
-              <a href="#" aria-label="Twitter" className="text-slate-500 hover:text-blue-400 transition-colors">
-                <Twitter className="h-4 w-4" />
+              <a href="#" aria-label="X (Twitter)" className="text-slate-500 hover:text-blue-400 transition-colors">
+                <X className="h-4 w-4" />
               </a>
               <a href="#" aria-label="Instagram" className="text-slate-500 hover:text-blue-400 transition-colors">
-                <Instagram className="h-4 w-4" />
+                <Camera className="h-4 w-4" />
               </a>
               <a href="#" aria-label="YouTube" className="text-slate-500 hover:text-blue-400 transition-colors">
-                <Youtube className="h-4 w-4" />
+                <PlayCircle className="h-4 w-4" />
               </a>
             </div>
           </div>
